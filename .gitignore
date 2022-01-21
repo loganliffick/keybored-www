@@ -37,3 +37,9 @@ yarn-error.log*
 #prettier
 .prettierignore
 .prettierrc
+
+#babel
+.babelrc
+
+#eslint
+.eslintrc.json
