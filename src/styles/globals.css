@@ -5,26 +5,29 @@
   --red: #e90000;
   --blue: #0046f7;
   --yellow: #e0d13a;
+  --logo: #c7c079;
   --green: #56a41a;
   --pink: #ffcce4;
   --width-1: 608px;
   --width-2: 768px;
+  --ease: cubic-bezier(1, 0.02, 0.38, 0.91);
 }
 
 *,
 html,
 body {
   box-sizing: border-box;
-  font-family: sans-serif;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--lite);
   cursor: default;
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -44,13 +47,6 @@ ul {
 li {
   margin: 0;
   cursor: pointer;
-}
-
-button {
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  outline: none;
 }
 
 @font-face {
@@ -123,6 +119,21 @@ p {
 }
 
 main {
-  width: 100vw;
   margin: 0 auto;
+  width: 100vw;
+}
+
+footer {
+  margin-top: 200px;
+  padding: 0px 64px 80px 64px;
+  text-align: center;
+  width: 100%;
+}
+
+footer a {
+  color: var(--blue);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: underline;
 }

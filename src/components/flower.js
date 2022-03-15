@@ -1,4 +1,13 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const twinkle = keyframes`
+from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(45deg) scale(1.1);
+  }
+`;
 
 const StyledSVG = styled.svg`
   position: absolute;
@@ -6,11 +15,8 @@ const StyledSVG = styled.svg`
   left: ${(props) => props.left || 'none'};
   right: ${(props) => props.right || 'none'};
   z-index: 0;
-  transition: transform 0.2s ease;
-
-  &:hover {
-    transform: ${(props) => (props.opposite ? 'rotate(-10deg)' : 'rotate(20deg)')};
-  }
+  animation: ${twinkle} 2.5s var(--ease) infinite alternate;
+  animation-delay: ${(props) => (props.delay ? '1s' : '0s')};
 
   @media (max-width: 500px) {
     z-index: -1;
