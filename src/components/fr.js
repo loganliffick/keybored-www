@@ -40,16 +40,20 @@ const Container = styled(StyledDiv)`
 const Headline = styled(StyledDiv)`
   align-items: center;
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
   justify-content: space-between;
+
+  @media (max-width: 500px) {
+    display: block;
+  }
 `;
 
 const Card = (props) => (
   <a href={'https://github.com/loganliffick/keybored/issues/' + props.n} target="_blank">
     <Container {...props}>
       <Headline>
-        <h3>{props.title}</h3>
         <Garnish type="link" />
+        <h3>{props.title}</h3>
       </Headline>
       <h4>{props.content}</h4>
     </Container>

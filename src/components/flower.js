@@ -19,7 +19,7 @@ const StyledSVG = styled.svg`
   animation-delay: ${(props) => (props.delay ? '1s' : '0s')};
 
   @media (max-width: 500px) {
-    z-index: -1;
+    display: none;
   }
 `;
 

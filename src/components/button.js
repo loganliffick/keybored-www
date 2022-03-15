@@ -40,7 +40,7 @@ const StyledA = styled.a`
     }
   }
 
-  @media (max-width: 370px) {
+  @media (max-width: 500px) {
     width: 100%;
   }
 `;
