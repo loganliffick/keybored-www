@@ -49,7 +49,7 @@ const StyledImg = styled(Image)`
 const Feature = (props) => (
   <StyledDiv>
     <Content>{props.children}</Content>
-    <StyledImg src={props.image} height={props.height} width="608px" />
+    <StyledImg src={props.image} height={props.height} width={props.width} alt={props.alt} />
   </StyledDiv>
 );
 
