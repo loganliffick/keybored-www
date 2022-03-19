@@ -44,7 +44,7 @@ const Version = (props) => (
           strokeWidth="2"
         />
       </svg>
-      <h4>v.0.0.9</h4>
+      <h4>v.0.0.8</h4>
     </div>
   </StyledDiv>
 );

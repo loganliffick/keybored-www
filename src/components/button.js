@@ -113,6 +113,7 @@ export const ToastButton = (props) => {
         {props.toast}
       </div>
       <Button
+        as="div"
         {...props}
         text={props.text}
         type={props.type}

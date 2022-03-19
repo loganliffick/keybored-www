@@ -14,12 +14,21 @@ const StyledDiv = styled.div`
   max-width: 608px;
   margin: 0 auto;
 
-  h2 {
-    margin-bottom: 24px;
-  }
-  h2,
-  a {
+  .logo {
     color: var(--logo);
+    font-family: 'Basteleur', serif;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -2%;
+    line-height: 48px;
+  }
+
+  .link {
+    color: var(--logo);
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
   }
 `;
 
@@ -29,7 +38,7 @@ const StyledNav = styled.nav`
   justify-content: center;
 
   a {
-    margin: 0 12px 0 12px;
+    margin: 24px 12px 0 12px;
   }
 `;
 
@@ -37,21 +46,19 @@ const Nav = () => {
   return (
     <NavWrap>
       <StyledDiv>
-        <h2>
-          <a href="https://keyboredjs.com">keybored</a>
-        </h2>
+        <a className="logo" href="https://keyboredjs.com">
+          keybored
+        </a>
         <StyledNav>
-          <h4>
-            <a href="#features">Features</a>
-          </h4>
-
-          <h4>
-            <a href="#guides">Guides</a>
-          </h4>
-
-          <h4>
-            <a href="#futures">Futures</a>
-          </h4>
+          <a className="link" href="#features">
+            Features
+          </a>
+          <a className="link" href="#guides">
+            Guides
+          </a>
+          <a className="link" href="#futures">
+            Futures
+          </a>
         </StyledNav>
       </StyledDiv>
     </NavWrap>

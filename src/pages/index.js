@@ -36,7 +36,6 @@ const Home = () => {
         <meta name="twitter:creator" content="@logan_liffick" />
         <meta name="robots" content="index,follow" />
         <meta name="googlebot" content="index,follow" />
-        {/* <meta name="google-site-verification" content="ugqQc2EJej0hywM0zD6iTDzuIhGCttd9t_p-kFFXm18" /> */}
       </Head>
       <Nav />
       <Version />
@@ -52,19 +51,19 @@ const Home = () => {
             <Flower color="var(--yellow)" size="56" top="-20px" left="-40px" />
             <Flower delay color="var(--red)" size="40" top="-30px" right="-60px" />
           </Headline>
-          <Feature image="/images/feature-1.svg" height="200px">
+          <Feature image="/images/feature-1.svg" height="200px" width="608px" alt="Various keycaps achievable with keybored js">
             <h3>Style Everything</h3>
             <p>
               Customize keybored to your heart’s desire. With the included <a href="#">CSS file</a>, you can style every aspect of your keys, including creating one-offs.
             </p>
           </Feature>
-          <Feature image="/images/feature-2.svg" height="304px">
+          <Feature image="/images/feature-2.svg" height="304px" width="608px" alt="Various keyboard options available with keybored js">
             <h3>Choose your bored</h3>
             <p>
               Choose between ‘std’ or ‘wasd’ for an experience that caters to your needs. Check out our <a href="#">futures</a> section for a peek at the roadmap.
             </p>
           </Feature>
-          <Feature image="/images/feature-3.svg" height="304px">
+          <Feature image="/images/feature-3.svg" height="304px" width="608px" alt="Visual depicting a selected key while using keybored js">
             <h3>Accessible by default</h3>
             <p>One of the biggest wins with keybored has been creating a keyboard that’s not only clickable and tappable, but also targetable using tabbing.</p>
           </Feature>
@@ -103,8 +102,8 @@ const Home = () => {
             <Flower color="var(--red)" size="40" top="-30px" right="-104px" />
           </Headline>
           <Fr down n="1" title="Custom keyboreds" content="This is a big one. How sick would it be to have a ‘custom’ option allowing users to handcraft the keybored they need?" color="var(--blue)" background="var(--pink)" />
-          <Fr n="2" title="TS support" content="Duh, everyone asks for this." color="var(--yellow)" background="var(--blue)" />
-          <Fr down n="3" title="Mobile bugs" content="As you probably already know, there’s some bugginess on mobile. Hot-ticket item right here!" color="var(--red)" background="var(--yellow)" />
+          <Fr n="2" title="TS support" content="Duh, everyone asks for this." color="var(--dark)" background="var(--yellow)" />
+          <Fr down n="3" title="Mobile bugs" content="As you probably already know, there’s some bugginess on mobile. Hot-ticket item right here!" color="var(--yellow)" background="var(--blue)" />
           <Fr n="4" title="Multi-key press" content="We’ll probably want to cmd+x at some point." color="var(--dark)" background="var(--green)" />
         </Section>
       </main>
