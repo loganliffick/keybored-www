@@ -85,13 +85,13 @@ const Home = () => {
             <h2>Usage</h2>
             <h4>A peek behind the curtain</h4>
           </Headline>
-          {/* <iframe
+          <iframe
             src="https://codesandbox.io/embed/keybored-bdc06?codemirror=1&fontsize=14&hidenavigation=1&theme=light&view=preview"
             style={{ width: '100%', height: '504px', border: '0', borderRadius: '12px', overflow: 'hidden', marginBottom: '40px' }}
             title="keybored"
             allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
             sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-          ></iframe> */}
+          ></iframe>
           <Options />
         </Section>
         <Section id="futures">

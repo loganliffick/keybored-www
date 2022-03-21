@@ -38,6 +38,3 @@ yarn-error.log*
 
 #babel
 .babelrc
-
-#eslint
-.eslintrc.json
