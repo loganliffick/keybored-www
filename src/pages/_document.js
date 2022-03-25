@@ -5,7 +5,7 @@ export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
-
+    console.log(originalRenderPage);
     try {
       ctx.renderPage = () =>
         originalRenderPage({
@@ -13,6 +13,7 @@ export default class MyDocument extends Document {
         });
 
       const initialProps = await Document.getInitialProps(ctx);
+
       return {
         ...initialProps,
         styles: (

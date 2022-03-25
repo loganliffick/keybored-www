@@ -60,7 +60,7 @@ const Home = () => {
           <Feature image="/images/feature-2.svg" height="304px" width="608px" alt="Various keyboard options available with keybored js">
             <h3>Choose your bored</h3>
             <p>
-              Choose between ‘std’ or ‘wasd’ for an experience that caters to your needs. Check out our <a href="#">futures</a> section for a peek at the roadmap.
+              Choose between ‘std’ or ‘wasd’ for an experience that caters to your needs. Check out our <a href="#futures">futures</a> section for a peek at the roadmap.
             </p>
           </Feature>
           <Feature image="/images/feature-3.svg" height="304px" width="608px" alt="Visual depicting a selected key while using keybored js">
